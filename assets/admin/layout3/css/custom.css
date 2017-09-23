@@ -1,0 +1,150 @@
+body, a{
+    color: #002E5B !important;
+}
+.form-login {
+    position: relative;
+    display: inline-block;
+    float: right;
+    transition: width 0.4s;
+    margin-top: 8px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.form-login .text-input {
+	border-radius: 0px;
+}
+
+.form-login .btn-primary {
+	border-radius: 0px;
+}
+
+.header-login-form {
+	height: auto !important;
+}
+
+.map-background{
+    background-image: url("../../../images/ASEAN_countries_capitals_2.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.disable-static-height{
+    height: auto;
+}
+
+.vh-height{
+    height: 80vh;
+}
+
+.slogan{
+    float: right;
+    color: #002E5B;
+}
+
+.slogan h2, h4{
+    font-weight: bold;
+}
+
+.logo{
+    max-width: 100%;
+    height: 80px;
+}
+
+.vintello-blue-button{
+    background-color: #002E5B;
+}
+
+.vintello-blue-text{
+    color: #002E5B;
+    font-weight: bold;
+}
+
+.form-control{
+    border: 3px solid #FDE428;
+}
+
+.btn{
+    background: #FDE428;
+    color: #002E5B;
+    font-weight: bold;
+}
+
+.box-corner{
+    border: 2px solid #FDE428;
+}
+
+.page-header{
+    margin: 0;
+}
+
+.caption-fix{
+    text-align: center;
+    float: none;
+    display: block;
+}
+
+.caption-fix span{
+    color: #002E5B;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+    background-color: #FDE428;
+}
+
+.nav-tabs > li > a, .nav-pills > li > a{
+    color: #002E5B;
+    font-weight: bold;
+}
+
+.nav-tabs{
+    border-bottom: 1px solid #FDE428;
+}
+.disable-bold{
+    font-weight: 300;
+}
+
+.panel-body{
+    padding: 0 15px;
+}
+
+.font-green-sharp{
+    color: #002E5B !important;
+}
+
+.caption{
+    text-align: center;
+    background: #FDE428;
+}
+
+.portlet > .portlet-title > .caption{
+    float: none;
+    display: block;
+}
+
+.float-right{
+    float: right;
+}
+
+[class^="fa-"], [class^="glyphicon-"], [class^="icon-"], [class*=" fa-"], [class*=" glyphicon-"], [class*=" icon-"]{
+    line-height: 0;
+    margin: 0;
+}
+
+.padding-top-30{
+    padding-top: 30px;
+}
+
+.padding-top-50{
+    padding-top: 50px;
+}
+
+.credit-value{
+    color: #002E5B;
+    float: left;
+    line-height: 71px;
+}
+
+.navbar-brand, .navbar-nav>li>a{
+    float: right;
+}
