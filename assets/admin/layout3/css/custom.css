@@ -63,6 +63,7 @@ body, a{
     background: #FDE428;
     color: #002E5B;
     font-weight: bold;
+    border-radius: 4px !important;
 }
 
 .box-corner{
@@ -154,4 +155,38 @@ body, a{
 
 .navbar-brand, .navbar-nav>li>a{
     height: 80px;
+}
+
+.title-box{
+    width: 40%;
+    padding: 10px;
+    float: left;
+    color: #002E5B;
+    background: #FDE428;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.title-box span{
+    float: right;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.disable-block{
+    display: inline-block;
+}
+
+.fixed-bottom-position{
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+
+.search-listname{
+    width: 60%;
+    margin-top: 3%;
+    display: inline-block;
 }
