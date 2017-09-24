@@ -2,13 +2,8 @@ body, a{
     color: #002E5B !important;
 }
 .form-login {
-    position: relative;
-    display: inline-block;
     float: right;
-    transition: width 0.4s;
-    margin-top: 8px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
+    padding-top: 5px;
 }
 
 .form-login .text-input {
@@ -147,4 +142,16 @@ body, a{
 
 .navbar-brand, .navbar-nav>li>a{
     float: right;
+}
+
+/*.nav li a:hover{
+    background-color: #FDE428;
+}*/
+
+.nav .open a:hover, .nav .open>a, .nav-tabs > li > a:hover, .nav-pills > li > a:hover{
+    background-color: #FDE428;
+}
+
+.navbar-brand, .navbar-nav>li>a{
+    height: 80px;
 }

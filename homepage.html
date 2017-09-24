@@ -20,25 +20,24 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- custom css -->
 	<link href="assets/admin/layout3/css/custom.css" rel="stylesheet" type="text/css">
-	<!-- javascript library -->
 </head>
 <body>
 <!-- BEGIN HEADER -->
 <div class="page-header disable-static-height">
 	<!-- BEGIN HEADER MENU -->
 	<div class=" header-login-form page-header-menu bg-yellow-crusta">
-		<div class="container ">
-			<div class="col-md-6">
+		<div class="container-fluid ">
+			<!-- LOGO BEGIN -->
+			<div class="col-md-6 col-sm-12 col-xs-12">
 				<img class="logo" src="assets/Vintello_logo-blue.png">
 			</div>
-			<!-- BEGIN HEADER SEARCH BOX -->
-			<form action="javascript:;" class="col-md-6 form-login">
+			<!-- BEGIN LOGIN -->
+			<form action="javascript:;" class="col-md-6 col-sm-12 col-xs-12 form-login">
 				<div class="form-body">
 					<div class="row">
 						<div class="col-md-5">
 							<div class="form-group ">
 								<div class="input-icon">
-									<i class="fa fa-user"></i>
 									<input type="text" class="form-control text-input" placeholder="Username">
 								</div>
 							</div>
@@ -46,7 +45,6 @@
 						<div class="col-md-5">
 							<div class="form-group ">
 								<div class="input-icon">
-									<i class="fa fa-key"></i>
 									<input type="Password" class="form-control text-input " placeholder="Password">
 								</div>
 							</div>
@@ -73,16 +71,14 @@
 					</div>
 				</div>
 			</form>
-			<!-- END HEADER SEARCH BOX -->
-			
+			<!-- END OF LOGIN -->
 		</div>
 	</div>
-	<!-- END HEADER MENU -->
 </div>
 <!-- END HEADER -->
 <!-- BEGIN PAGE CONTAINER -->
 <div class="page-container map-background vh-height">
-	<!-- BEGIN PAGE HEAD -->
+	<!-- BEGIN WELCOME -->
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 slogan" align="center">
@@ -91,56 +87,8 @@
 				</div>
 			</div>
 		</div>
-	<!-- END PAGE HEAD -->
+	<!-- END OF BODY -->
 </div>
-<!-- END PAGE CONTAINER -->
-
-<!-- BEGIN JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) -->
-<!-- BEGIN CORE PLUGINS -->
-<!--[if lt IE 9]>
-<script src="../../assets/global/plugins/respond.min.js"></script>
-<script src="../../assets/global/plugins/excanvas.min.js"></script> 
-<![endif]-->
-<script src="libs/JQuery/jquery.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
-<script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
-<!-- END CORE PLUGINS -->
-<!-- BEGIN PAGE LEVEL PLUGINS -->
-<script src="assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
-<!-- IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support -->
-<script src="assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
-<!-- END PAGE LEVEL PLUGINS -->
-<!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
-<script src="assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
-<script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
-<script src="assets/admin/pages/scripts/index3.js" type="text/javascript"></script>
-<script src="assets/admin/pages/scripts/tasks.js" type="text/javascript"></script>
-<!-- END PAGE LEVEL SCRIPTS -->
-<script>
-jQuery(document).ready(function() {    
-   Metronic.init(); // init metronic core componets
-   Layout.init(); // init layout
-   Demo.init(); // init demo(theme settings page)
-   Index.init(); // init index page
-   Tasks.initDashboardWidget(); // init tash dashboard widget
-});
-</script>
 <!-- END JAVASCRIPTS -->
 </body>
 </html>
