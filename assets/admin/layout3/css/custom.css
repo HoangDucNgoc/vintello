@@ -1,6 +1,7 @@
 body, a{
     color: #002E5B !important;
 }
+
 .form-login {
     float: right;
     padding-top: 5px;
@@ -189,4 +190,40 @@ body, a{
     width: 60%;
     margin-top: 3%;
     display: inline-block;
+}
+
+.nav-wizard > li.active > a, .nav-wizard > li.active > a:hover, .nav-wizard > li.active > a:focus{
+    background-color: #FDE428;
+}
+
+.nav-wizard > li.active > a:after{
+    border-left-color: #FDE428;
+}
+
+.padding-top-15{
+    padding-top: 15px;
+}
+
+div.tagsinput{
+    border: none;
+}
+
+div.tagsinput span.tag{
+    background-color: #eeeeee;
+    color: #002E5B;
+}
+
+.fp-tableCell{
+    vertical-align: top;
+}
+
+.portlet.light{
+    padding: 0;
+}
+
+.stepone-portlet-title-config{
+    background: #FDE428;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
 }
