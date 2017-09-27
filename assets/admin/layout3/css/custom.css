@@ -78,7 +78,9 @@ body, a{
 .caption-fix{
     text-align: center;
     float: none;
-    display: block;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
 }
 
 .caption-fix span{
@@ -165,6 +167,7 @@ body, a{
     color: #002E5B;
     background: #FDE428;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 .title-box span{
@@ -276,6 +279,52 @@ div.tagsinput span.tag{
 }
 .arrowDown{
     bottom: 20px;
+    left: 720px;
     border-width: 38.5px 34px 0 38.5px;
     border-color: #FDE428 transparent transparent transparent;
+}
+
+.arrowUp{
+    bottom: 20px;
+    left: 635px;
+    border-width: 0 38.5px 34px 38.5px;
+    border-color: transparent transparent #FDE428 transparent;
+}
+
+.arrowDown:hover{
+    border-color: #f3c200 transparent transparent transparent;
+}
+
+.arrowUp:hover{
+    border-color: transparent transparent #f3c200 transparent;
+}
+
+.input-icon > .form-control{
+    padding-left: 5px;
+}
+
+.cho-ngan-lai{
+    padding: 0 20%;
+}
+
+.portlet.light > .portlet-title{
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+
+.portlet.light .portlet-body{
+    padding-bottom: 15px;
+}
+
+.disable-border{
+    border-radius: 0 !important;
+}
+
+.alert{
+    margin-bottom: 0;
+}
+
+.margin-15-0{
+    margin: 15px 0;
 }
