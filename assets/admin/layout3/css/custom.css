@@ -332,3 +332,9 @@ div.tagsinput span.tag{
 .table-responsive th, .table-responsive td{
     text-align: center;
 }
+
+.data-analysis{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}

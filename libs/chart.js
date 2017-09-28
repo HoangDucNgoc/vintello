@@ -7,11 +7,13 @@ google.charts.load('current', {
        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
     });
+
 	// -------------------------------------------------------
       google.charts.setOnLoadCallback(drawChart);
 	  google.charts.setOnLoadCallback(drawChartTypeBar);
 	  google.charts.setOnLoadCallback(drawMarkersMap);
 	  google.charts.setOnLoadCallback(drawChart1);
+	  google.charts.setOnLoadCallback(drawTrendlines);
 		
 	  function drawChartTypeBar(){
 		 var data = google.visualization.arrayToDataTable([
@@ -37,14 +39,10 @@ google.charts.load('current', {
 			  var chart1 = new google.visualization.BarChart(document.getElementById('barchart1'));
   			  var chart2 = new google.visualization.BarChart(document.getElementById('barchart2'));
   			  var chart3 = new google.visualization.BarChart(document.getElementById('barchart3'));
-  			   var chart4 = new google.visualization.BarChart(document.getElementById('barchart4'));
-  			   var chart5 = new google.visualization.BarChart(document.getElementById('barchart5'));
   			  // activate 3 chart
 			chart1.draw(data, options);
 			chart2.draw(data, options);
 			chart3.draw(data, options);
-			chart4.draw(data, options);
-			chart5.draw(data, options);
 	  }
       function drawChart() {
 
@@ -94,8 +92,9 @@ google.charts.load('current', {
 	        displayMode: 'markers',
 	        colorAxis: {colors: ['#e7711c', '#4374e0']} // orange to blue
 	      };
-
-	      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+	      // chart_div 1 : create Map chart
+	      var chart = new google.visualization.GeoChart(document.getElementById('chart_div1'));
+	      // activate Map chart
 	      chart.draw(data, options);
     };
 
@@ -130,4 +129,30 @@ google.charts.load('current', {
       var chart = new google.visualization.BubbleChart(document.getElementById('noAura'));
 
       chart.draw(data, options);
+    };
+
+	function drawTrendlines() {     
+       var data = google.visualization.arrayToDataTable([
+         ['Element', 'Density', { role: 'style' }],
+         ['Copper', 8.94, '#b87333'],            // RGB value
+         ['Silver', 10.49, 'silver'],            // English color name
+         ['Gold', 19.30, 'gold'],
+		 ['Platinum', 21.45, 'color: #e5e4e2' ], // CSS-style declaration
+      ]);
+
+      var options = {
+        title: 'Motivation and Energy Level Throughout the Day',
+        hAxis: {
+          title: 'Time of Day',
+        },
+        vAxis: {
+          title: 'Rating (scale of 1-10)'
+        }
+      };
+      // chart div 1 2: create column chart
+      var chart2 = new google.visualization.ColumnChart(document.getElementById('chart_div2'));
+      var chart3 = new google.visualization.ColumnChart(document.getElementById('chart_div3'));
+      // activate column chart
+      chart2.draw(data, options);
+      chart3.draw(data, options);
     }
