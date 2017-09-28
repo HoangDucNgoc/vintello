@@ -668,6 +668,7 @@
 			</div>
 		</div>
 		<!-- END OF SECTION 4 -->
+		<!-- SECTION 5 -->
 		<div class="section container-fluid">
 			<div class="row">
 				<div class="col-md-12">
@@ -680,7 +681,34 @@
 				</div>
 				<div class="col-md-12">
 					<div class="col-md-6">
-						
+						<div class="portlet light">
+							<div class="portlet-body">
+								<div class="table-responsive">
+									<table class="table">
+									<thead>
+									<tr>
+										<th>
+											Signal
+										</th>
+										<th>
+											Success rate
+										</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>
+											Manufactoring
+										</td>
+										<td>
+											95%
+										</td>
+									</tr>
+									</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-md-6">
 						<div id="barchart5"></div>
@@ -688,6 +716,19 @@
 				</div>
 			</div>
 		</div>
+		<!-- END OF SECTION 5 -->
+		<!-- SECTION 6 -->
+		<div class="section container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div id="noAura"></div>
+				</div>
+				<div class="col-md-6">
+					<div id="chart_div"></div>
+				</div>
+			</div>
+		</div>
+		<!-- END OF SECTION 6 -->
 	</div>
 	<!-- NAVIGATION UP AND DOWN -->
 	<div class="arrowDown"></div>
@@ -729,7 +770,6 @@
 <script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/components-form-tools.js"></script>
 <script src="assets/admin/pages/scripts/table-advanced.js"></script>
-<!--script src="libs/resize.js" type="text/javascript"></script-->
 <script>
     $(document).ready(function() {      
 	    // initiate layout and plugins
@@ -758,80 +798,6 @@
 </script>
 <!-- Chart -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-	  google.charts.setOnLoadCallback(drawChartTypeBar);
-
-		
-	  function drawChartTypeBar(){
-		 var data = google.visualization.arrayToDataTable([
-        ['Year', 'Visitations', { role: 'style' } ],
-        ['2010', 10, 'color: gray'],
-        ['2020', 14, 'color: #76A7FA'],
-        ['2030', 16, 'opacity: 0.2'],
-        ['2040', 22, 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF'],
-        ['2050', 28, 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 8; fill-color: #BC5679; fill-opacity: 0.2']
-      ]);
-			  
-		
-			  var options = {
-				  title: 'Revenue vs. Predictive score',
-				  legend: { position: 'none' },
-				  bars: 'horizontal', // Required for Material Bar Charts.
-				  bar: {groupWidth: "95%"},
-				  hAxis: { textPosition: 'none' },
-				  bar: { groupWidth: "90%" }
-				};
-
-				// create 3 barchart
-			  var chart1 = new google.visualization.BarChart(document.getElementById('barchart1'));
-  			  var chart2 = new google.visualization.BarChart(document.getElementById('barchart2'));
-  			  var chart3 = new google.visualization.BarChart(document.getElementById('barchart3'));
-  			   var chart4 = new google.visualization.BarChart(document.getElementById('barchart4'));
-  			   var chart5 = new google.visualization.BarChart(document.getElementById('barchart5'));
-  			  // activate 3 chart
-			chart1.draw(data, options);
-			chart2.draw(data, options);
-			chart3.draw(data, options);
-			chart4.draw(data, options);
-			chart5.draw(data, options);
-	  }
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Hinh',     20],
-          ['Eat',      20],
-          ['Commute',  20],
-          ['Watch TV', 30],
-          ['Sleep',    10]
-        ]);
-
-        var options = {
-        	title: 'Company Level Penetration',
-          	legend: 'bottom',
-		  // set percent
-		  	sliceVisibilityThreshold: .2,
-		  // format color 
-		  	slices: {
-            0: { color: 'yellow' },
-            1: { color: '#002E5B' }
-          }
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
-
-        chart.draw(data, options);
-        chart2.draw(data, options);
-
-
-        /*$(window).resize(function(){
-		  drawChart();
-		  drawChartTypeBar();
-		});*/
-      }
-    </script>
+<script type="text/javascript" src="libs/chart.js"></script>
 </body>
 </html>
