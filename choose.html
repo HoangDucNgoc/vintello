@@ -172,7 +172,7 @@
             <div class="clearfix"></div>
             <div class="col-md-12 ">
                 <input class="form-control border-3px search-listname" name="" type="text">
-                    <button class="btn disable-border-radius" type="submit">
+                    <button class="btn disable-border-radius" id="btn-next" type="submit">
                         NEXT
                     </button>
                 </input>
@@ -186,6 +186,11 @@
         <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
         <!-- DROPDOWN JS -->
         <script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+            $('#btn-next').click(function(){
+                    window.location = "./stepone.html";
+                })
         </script>
     </body>
 </html>
