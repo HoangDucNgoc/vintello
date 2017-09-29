@@ -65,6 +65,7 @@ body, a {
     color: #002E5B;
     font-weight: bold;
     border-radius: 0 !important;
+    vertical-align: baseline;
 }
 
 .box-corner {
@@ -351,13 +352,12 @@ div.tagsinput span.tag {
 /*================= page dashboard =====================*/
 
 .box-select {
-    padding-left: 19.5%;
+    margin: 0 15%;
 }
 
 .dashboard-title-box {
     /*width: 66%;*/
     padding: 10px;
-    float: left;
     color: #002E5B;
     font-weight: bold;
     margin-top: 15px;
@@ -400,4 +400,8 @@ div.tagsinput span.tag {
 .chart-box-last {
     margin-right: 0px !important;
     min-width: 26%;
+}
+
+.float-left{
+    float: left;
 }
