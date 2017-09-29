@@ -123,6 +123,7 @@ google.charts.load('current', {
             auraColor: 'none',
           }
         },
+        height: 400,
 		legend : {position: 'top', textStyle: {color: 'blue', fontSize: 16}}
       };
 

@@ -64,7 +64,7 @@ body, a{
     background: #FDE428;
     color: #002E5B;
     font-weight: bold;
-    border-radius: 4px !important;
+    border-radius: 0 !important;
 }
 
 .box-corner{
@@ -337,4 +337,8 @@ div.tagsinput span.tag{
     text-align: center;
     font-weight: bold;
     font-size: 25px;
+}
+
+.alert{
+    -webkit-box-shadow: none;
 }
