@@ -405,3 +405,17 @@ div.tagsinput span.tag {
 .float-left{
     float: left;
 }
+
+.title-box-step-3 {
+    width: 75%;
+    padding: 10px;
+    float: left;
+    color: #002E5B;
+    background: #FDE428;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.title-box-step-3 span{
+    float: right;
+}

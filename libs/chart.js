@@ -68,11 +68,12 @@ google.charts.load('current', {
         };
         // create chart
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        //var chart1 = new google.visualization.PieChart(document.getElementById('piechart1'));
         var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
         // activate piechart
         chart.draw(data, options);
         chart2.draw(data, options);
-
+        //chart1.draw(data, options);
 
         /*$(window).resize(function(){
 		  drawChart();
@@ -153,7 +154,11 @@ google.charts.load('current', {
       // chart div 1 2: create column chart
       var chart2 = new google.visualization.ColumnChart(document.getElementById('chart_div2'));
       var chart3 = new google.visualization.ColumnChart(document.getElementById('chart_div3'));
+      var chart4 = new google.visualization.ColumnChart(document.getElementById('chart_div4'));
+      var chart5 = new google.visualization.ColumnChart(document.getElementById('chart_div5'));
       // activate column chart
       chart2.draw(data, options);
       chart3.draw(data, options);
+      chart4.draw(data, options);
+      chart5.draw(data, options);
     }
