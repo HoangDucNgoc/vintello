@@ -415,6 +415,7 @@ div.tagsinput span.tag {
     background: #FDE428;
     font-weight: bold;
     margin-top: 15px;
+    margin-bottom: 1%;
 }
 
 .title-box-step-3 span{
@@ -462,4 +463,17 @@ div.tagsinput span.tag {
 
 .tiles .tile .tile-body > i{
     margin-top: 40px;
+}
+
+.stepone-portlet-title-config{
+    margin-bottom: 2%;
+}
+
+.disable-margin-bottom{
+    margin-bottom: 0px;
+}
+
+.square-135{
+    height: 135px;
+    width: 135px !important;
 }
