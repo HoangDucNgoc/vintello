@@ -470,7 +470,7 @@ div.tagsinput span.tag {
 }
 
 .disable-margin-bottom{
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .square-135{
@@ -480,4 +480,24 @@ div.tagsinput span.tag {
 
 .cho-ngan-lai2{
     padding: 0px 20% 0 20%;
+}
+
+.disable-list-type{
+    list-style-type: none;
+}
+
+.margin-top-12per{
+    margin-top: 12%;
+}
+
+.margin-left-3per{
+   margin-right: 3%;
+}
+
+.disable-padding{
+    padding: 0;
+}
+
+.portlet{
+    margin-bottom: 10px;
 }
