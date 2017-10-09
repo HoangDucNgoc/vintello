@@ -1,0 +1,81 @@
+@media screen and (max-width: 386px){
+	.logo a{
+		font-size: 3em;
+	}
+
+	.logo{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.logo{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 297px){
+	.logo a{
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.dashboard-stat.blue-soft .details .number{
+		font-size: 23px;
+	}
+}
+
+@media screen and (max-width: 380px) and (min-width: 349px){
+	.dashboard-stat.blue-soft .details .number{
+		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 810px){
+	.cho-ngan-lai2{
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.title-box{
+		width: 100%;
+		text-align: center;
+	}
+	.responsive-bar-size{
+		width: 100%;
+	}
+	.responsive-middle-align{
+		text-align: center;
+	}
+	.title-box-step-3{
+		width: 100%;
+		text-align: center;
+	}
+	.responsive-disable-padding{
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.responsive-full-screen li{
+
+	}
+}
+
+@media screen and (max-width: 650px){	
+	.stepone-portlet-title-config{
+		margin-bottom: 5%;
+	}
+
+	.form-group{
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 762px){
+	.responsive-hidden{
+		display: none;
+	}
+}

@@ -4,7 +4,7 @@ body, a {
 
 .form-login {
     float: right;
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
 .form-login .text-input {
@@ -319,7 +319,6 @@ div.tagsinput span.tag {
 }
 
 .portlet.light .portlet-body {
-    padding-bottom: 15px;
     padding-top: 0;
 }
 
@@ -414,11 +413,9 @@ div.tagsinput span.tag {
     color: #002E5B;
     background: #FDE428;
     font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 1%;
 }
 
-.title-box-step-3 span{
+.title-box-step-3 div{
     float: right;
 }
 
@@ -500,4 +497,29 @@ div.tagsinput span.tag {
 
 .portlet{
     margin-bottom: 10px;
+}
+
+.logo a{
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.logo a:hover{
+    text-decoration: none;
+}
+
+.margin-bottom-20px{
+    margin-bottom: 20px;
+}
+
+.form-group{
+    margin-bottom: 0;
+}
+
+.disable-margin{
+    margin: 0;
+}
+
+.margin-bottom-1per{
+    margin-bottom: 1%;
 }
