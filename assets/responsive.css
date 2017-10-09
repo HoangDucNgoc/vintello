@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 991px){
 	.responsive-full-screen li{
-
+		width: 100%;
 	}
 }
 
@@ -76,6 +76,7 @@
 
 @media screen and (max-width: 762px){
 	.responsive-hidden{
-		display: none;
+		background-color: white;
 	}
+
 }
