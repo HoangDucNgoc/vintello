@@ -527,3 +527,15 @@ div.tagsinput span.tag {
 .padding-left-1per{
     padding-left: 3%;
 }
+
+.btn-margin-set{
+    margin: 10px 4%;
+}
+
+.margin-left-3{
+    margin-left: 3% !important;
+}
+
+.margin-right-1per{
+    margin-right: 1%;
+}

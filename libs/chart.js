@@ -9,7 +9,7 @@ google.charts.load('current', {
     });
 
 	// -------------------------------------------------------
-      google.charts.setOnLoadCallback(drawChart);
+    google.charts.setOnLoadCallback(drawChart);
 	  google.charts.setOnLoadCallback(drawChartTypeBar);
 	  google.charts.setOnLoadCallback(drawMarkersMap);
 	  google.charts.setOnLoadCallback(drawChart1);
@@ -36,7 +36,7 @@ google.charts.load('current', {
 				};
 
 				// create 3 barchart
-			  var chart1 = new google.visualization.BarChart(document.getElementById('barchart1'));
+			   var chart1 = new google.visualization.BarChart(document.getElementById('barchart1'));
   			  var chart2 = new google.visualization.BarChart(document.getElementById('barchart2'));
   			  var chart3 = new google.visualization.BarChart(document.getElementById('barchart3'));
   			  // activate 3 chart
@@ -67,18 +67,8 @@ google.charts.load('current', {
           }
         };
         // create chart
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        //var chart1 = new google.visualization.PieChart(document.getElementById('piechart1'));
-        var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
-        // activate piechart
-        chart.draw(data, options);
-        chart2.draw(data, options);
-        //chart1.draw(data, options);
-
-        /*$(window).resize(function(){
-		  drawChart();
-		  drawChartTypeBar();
-		});*/
+        var chart10 = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart10.draw(data, options);
 };
 		function drawMarkersMap() {
 	      var data = google.visualization.arrayToDataTable([
