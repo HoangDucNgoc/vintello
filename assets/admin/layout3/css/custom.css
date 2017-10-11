@@ -529,7 +529,8 @@ div.tagsinput span.tag {
 }
 
 .btn-margin-set{
-    margin: 10px 4%;
+    margin: 10px 0;
+    width: 14%;
 }
 
 .margin-left-3{
