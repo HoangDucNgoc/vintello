@@ -1,8 +1,6 @@
 /**
 Demo script to handle the theme demo
 **/
-
-
 var Demo = function () {
 
     // Handle Theme Settings
