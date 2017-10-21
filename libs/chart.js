@@ -57,10 +57,16 @@ google.charts.load('current', {
 			   var chart1 = new google.visualization.BarChart(document.getElementById('barchart1'));
   			  var chart2 = new google.visualization.BarChart(document.getElementById('barchart2'));
   			  var chart3 = new google.visualization.BarChart(document.getElementById('barchart3'));
+          var chart11 = new google.visualization.BarChart(document.getElementById('barchart4'));
+          var chart21 = new google.visualization.BarChart(document.getElementById('barchart5'));
+          var chart31 = new google.visualization.BarChart(document.getElementById('barchart6'));
   			  // activate 3 chart
 			chart1.draw(data, options);
 			chart2.draw(data, options1);
 			chart3.draw(data, options2);
+      chart11.draw(data, options);
+      chart21.draw(data, options1);
+      chart31.draw(data, options2);
 	  }
       function drawChart() {
 
@@ -111,9 +117,15 @@ google.charts.load('current', {
         var chart10 = new google.visualization.PieChart(document.getElementById('piechart'));
         var chart2 = new google.visualization.PieChart(document.getElementById('piechart1'));
         var chart3 = new google.visualization.PieChart(document.getElementById('piechart2'));
+        var chart101 = new google.visualization.PieChart(document.getElementById('piechart3'));
+        var chart21 = new google.visualization.PieChart(document.getElementById('piechart4'));
+        var chart31 = new google.visualization.PieChart(document.getElementById('piechart5'));
         chart10.draw(data, options);
         chart2.draw(data, options1);
         chart3.draw(data, options2);
+        chart101.draw(data, options);
+        chart21.draw(data, options1);
+        chart31.draw(data, options2);
 };
 		function drawMarkersMap() {
 	      var data = google.visualization.arrayToDataTable([
