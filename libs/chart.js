@@ -20,14 +20,14 @@ google.charts.load('current', {
         ['Year', 'Visitations', { role: 'style' } ],
         ['2010', 10, 'color: gray'],
         ['2020', 14, 'color: #76A7FA'],
-        ['2030', 16, 'opacity: 0.2'],
+        ['2030', 16, 'color: red'],
         ['2040', 22, 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF'],
         ['2050', 28, 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 8; fill-color: #BC5679; fill-opacity: 0.2']
       ]);
 			  
 		
 			  var options = {
-				  title: 'Revenue vs. Predictive score',
+				  title: 'By revenue ',
 				  legend: { position: 'none' },
 				  bars: 'horizontal', // Required for Material Bar Charts.
 				  bar: {groupWidth: "95%"},
@@ -35,14 +35,32 @@ google.charts.load('current', {
 				  bar: { groupWidth: "90%" }
 				};
 
+        var options1 = {
+          title: 'By profit',
+          legend: { position: 'none' },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          bar: {groupWidth: "95%"},
+          hAxis: { textPosition: 'none' },
+          bar: { groupWidth: "90%" }
+        };
+
+        var options2 = {
+          title: 'By employee counts',
+          legend: { position: 'none' },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          bar: {groupWidth: "95%"},
+          hAxis: { textPosition: 'none' },
+          bar: { groupWidth: "90%" }
+        };
+
 				// create 3 barchart
 			   var chart1 = new google.visualization.BarChart(document.getElementById('barchart1'));
   			  var chart2 = new google.visualization.BarChart(document.getElementById('barchart2'));
   			  var chart3 = new google.visualization.BarChart(document.getElementById('barchart3'));
   			  // activate 3 chart
 			chart1.draw(data, options);
-			chart2.draw(data, options);
-			chart3.draw(data, options);
+			chart2.draw(data, options1);
+			chart3.draw(data, options2);
 	  }
       function drawChart() {
 
@@ -50,14 +68,12 @@ google.charts.load('current', {
           ['Task', 'Hours per Day'],
           ['Hinh',     20],
           ['Eat',      20],
-          ['Commute',  20],
-          ['Watch TV', 30],
-          ['Sleep',    10]
+          ['Rice',      50],
         ]);
 
         var options = {
-        	title: 'Company Level Penetration',
-          	legend: 'bottom',
+        	  title: 'By verticals',
+          	legend: 'Right',
 		  // set percent
 		  	sliceVisibilityThreshold: .2,
 		  // format color 
@@ -66,9 +82,38 @@ google.charts.load('current', {
             1: { color: '#002E5B' }
           }
         };
+
+        var options1 = {
+            title: 'By countries',
+            legend: 'Right',
+      // set percent
+        sliceVisibilityThreshold: .2,
+      // format color 
+        slices: {
+            0: { color: 'yellow' },
+            1: { color: '#002E5B' }
+          }
+        };
+
+
+        var options2 = {
+            title: 'By cities',
+            legend: 'Right',
+      // set percent
+        sliceVisibilityThreshold: .2,
+      // format color 
+        slices: {
+            0: { color: 'yellow' },
+            1: { color: '#002E5B' }
+          }
+        };
         // create chart
         var chart10 = new google.visualization.PieChart(document.getElementById('piechart'));
+        var chart2 = new google.visualization.PieChart(document.getElementById('piechart1'));
+        var chart3 = new google.visualization.PieChart(document.getElementById('piechart2'));
         chart10.draw(data, options);
+        chart2.draw(data, options1);
+        chart3.draw(data, options2);
 };
 		function drawMarkersMap() {
 	      var data = google.visualization.arrayToDataTable([
