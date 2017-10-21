@@ -594,3 +594,13 @@ hr{
 .tabbable-tabdrop .nav-tabs, .tabbable-tabdrop .nav-pills{
     float: left;
 }
+
+.mylist:hover{
+    background-color: #FDE428;
+}
+
+.dataTables_filter .form-control, .dataTables_filter label, div.dataTables_length select
+,.dataTables_length label, div.dataTables_paginate ul.pagination,
+div.dataTables_info{
+    display: none;
+}

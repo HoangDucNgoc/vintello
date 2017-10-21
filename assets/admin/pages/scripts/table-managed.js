@@ -34,17 +34,29 @@ var TableManaged = function () {
 
             "bStateSave": true, // save datatable state(pagination, sort, etc) in cookie.
 
-            "columns": [{
+            "columns": [
+            {
                 "orderable": false
-            }, {
+            }, 
+            {
                 "orderable": true
-            }, {
+            }, 
+            {
                 "orderable": false
-            }, {
+            }, 
+            {
                 "orderable": false
-            }, {
+            },
+            {
                 "orderable": true
-            }, {
+            },
+            {
+                "orderable": true
+            },
+            {
+                "orderable": true
+            },
+            {
                 "orderable": false
             }],
             "lengthMenu": [
@@ -52,7 +64,7 @@ var TableManaged = function () {
                 [5, 15, 20, "All"] // change per page values here
             ],
             // set the initial value
-            "pageLength": 5,            
+            "pageLength": 11,            
             "pagingType": "bootstrap_full_number",
             "language": {
                 "search": "My search: ",
@@ -65,7 +77,7 @@ var TableManaged = function () {
                 }
             },
             "columnDefs": [{  // set default column settings
-                'orderable': false,
+                'orderable': true,
                 'targets': [0]
             }, {
                 "searchable": false,
@@ -133,7 +145,7 @@ var TableManaged = function () {
                 [5, 15, 20, "All"] // change per page values here
             ],
             // set the initial value
-            "pageLength": 5,
+            "pageLength": 11,
             "language": {
                 "lengthMenu": " _MENU_ records",
                 "paging": {
