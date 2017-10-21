@@ -591,3 +591,6 @@ hr{
     margin-left: 5%;
 }
 
+.tabbable-tabdrop .nav-tabs, .tabbable-tabdrop .nav-pills{
+    float: left;
+}
