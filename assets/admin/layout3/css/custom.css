@@ -561,3 +561,20 @@ div.tagsinput span.tag {
 .padding-bottom-20{
     padding-bottom: 20px;
 }
+
+.data-box-align{
+    height: 112px;
+    text-align: center;
+    line-height: 87px;
+    font-size: 3em;
+}
+
+hr{
+    width: 50%;
+    border: 0.5px solid #002E5B;
+    margin: 20px auto;
+}
+
+.padding-left-30{
+    padding-left: 30px;
+}
