@@ -549,3 +549,11 @@ div.tagsinput span.tag {
 .margin-right-25per{
     margin-right: 25%;
 }
+
+.border-left-1px{
+    border-left: 1px solid;
+}
+
+.border-left-1px:hover{
+    border-left: 1px solid;
+}
