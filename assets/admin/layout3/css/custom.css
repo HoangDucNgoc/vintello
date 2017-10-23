@@ -402,7 +402,7 @@ div.tagsinput span.tag {
     min-width: 26%;
 }
 
-.float-left{
+.float-left {
     float: left;
 }
 
@@ -415,192 +415,192 @@ div.tagsinput span.tag {
     font-weight: bold;
 }
 
-.title-box-step-3 div{
+.title-box-step-3 div {
     float: right;
 }
 
-.bg-purple{
+.bg-purple {
     background-color: #002E5B !important;
 }
 
-.attribute-align{
+.attribute-align {
     padding-left: 4%;
 }
 
-.height-175{
+.height-175 {
     height: 175px;
 }
 
-.padding-left-3p2per{
+.padding-left-3p2per {
     padding-left: 3.2%;
 }
 
-.padding-left-5per{
+.padding-left-5per {
     padding-left: 5%;
 }
 
-.padding-top-50{
+.padding-top-50 {
     padding-top: 50px;
 }
 
-.tiles .tile .tile-object > .name{
-    
-}
+.tiles .tile .tile-object>.name {}
 
-.magic-box{
+.magic-box {
     width: 217px;
     float: left;
     text-align: center;
 }
 
-.tiles .tile{
+.tiles .tile {
     height: 180px;
     width: 217px !important;
 }
 
-.tiles .tile .tile-body > i{
+.tiles .tile .tile-body>i {
     margin-top: 40px;
 }
 
-.stepone-portlet-title-config{
+.stepone-portlet-title-config {
     margin-bottom: 2%;
 }
 
-.disable-margin-bottom{
+.disable-margin-bottom {
     margin-bottom: 0;
 }
 
-.square-135{
+.square-135 {
     height: 135px;
     width: 135px !important;
 }
 
-.cho-ngan-lai2{
+.cho-ngan-lai2 {
     padding: 0px 20% 0 20%;
 }
 
-.disable-list-type{
+.disable-list-type {
     list-style-type: none;
 }
 
-.margin-top-12per{
+.margin-top-12per {
     margin-top: 12%;
 }
 
-.margin-left-3per{
-   margin-right: 3%;
+.margin-left-3per {
+    margin-right: 3%;
 }
 
-.disable-padding{
+.disable-padding {
     padding: 0;
 }
 
-.portlet{
+.portlet {
     margin-bottom: 10px;
 }
 
-.logo a{
+.logo a {
     font-weight: bold;
     font-size: 4em;
 }
 
-.logo a:hover{
+.logo a:hover {
     text-decoration: none;
 }
 
-.margin-bottom-20px{
+.margin-bottom-20px {
     margin-bottom: 20px;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 0;
 }
 
-.disable-margin{
+.disable-margin {
     margin: 0;
 }
 
-.margin-bottom-1per{
+.margin-bottom-1per {
     margin-bottom: 1%;
 }
 
-.padding-left-1per{
+.padding-left-1per {
     padding-left: 3%;
 }
 
-.btn-margin-set{
+.btn-margin-set {
     margin: 10px 0;
     width: 14%;
 }
 
-.margin-left-3{
+.margin-left-3 {
     margin-left: 3% !important;
 }
 
-.margin-right-1{
+.margin-right-1 {
     /*margin-right: 1px;*/
 }
 
-.next-button{
+.next-button {
     width: 9%;
     margin-right: 1%;
 }
 
-.margin-right-25per{
+.margin-right-25per {
     margin-right: 25%;
 }
 
-.border-left-1px{
+.border-left-1px {
     border-left: 1px solid;
 }
 
-.border-left-1px:hover{
+.border-left-1px:hover {
     border-left: 1px solid;
 }
 
-.padding-bottom-20{
+.padding-bottom-20 {
     padding-bottom: 20px;
 }
 
-.data-box-align{
+.data-box-align {
     height: 112px;
     text-align: center;
     line-height: 87px;
     font-size: 3em;
 }
 
-hr{
+hr {
     width: 50%;
     border: 0.5px solid #002E5B;
     margin: 20px auto;
 }
 
-.padding-left-30{
+.padding-left-30 {
     padding-left: 30px;
 }
 
-.margin-top-1per{
+.margin-top-1per {
     margin-top: 1%;
 }
 
-.margin-top-5{
+.margin-top-5 {
     margin-top: 5px;
 }
 
-.margin-left-5per{
+.margin-left-5per {
     margin-left: 5%;
 }
 
-.tabbable-tabdrop .nav-tabs, .tabbable-tabdrop .nav-pills{
+.tabbable-tabdrop .nav-tabs, .tabbable-tabdrop .nav-pills {
     float: left;
 }
 
-.mylist:hover{
+.mylist:hover {
     background-color: #FDE428;
 }
 
-.dataTables_filter .form-control, .dataTables_filter label, div.dataTables_length select
-,.dataTables_length label, div.dataTables_paginate ul.pagination,
-div.dataTables_info{
+.dataTables_filter .form-control, .dataTables_filter label, div.dataTables_length select, .dataTables_length label, div.dataTables_paginate ul.pagination, div.dataTables_info {
     display: none;
+}
+
+.select-query-action {
+    width: 0%;
 }

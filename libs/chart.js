@@ -11,9 +11,6 @@ google.charts.load('current', {
 	// -------------------------------------------------------
     google.charts.setOnLoadCallback(drawChart);
 	  google.charts.setOnLoadCallback(drawChartTypeBar);
-	  google.charts.setOnLoadCallback(drawMarkersMap);
-	  google.charts.setOnLoadCallback(drawChart1);
-	  google.charts.setOnLoadCallback(drawTrendlines);
 		
 	  function drawChartTypeBar(){
 		 var data = google.visualization.arrayToDataTable([
@@ -163,85 +160,5 @@ google.charts.load('current', {
         // chart21.draw(data, options4);
         // chart31.draw(data, options5);
 };
-		function drawMarkersMap() {
-	      var data = google.visualization.arrayToDataTable([
-	        ['City',   'Population', 'Area'],
-	        ['HaNoi',      2761477,    1285.31],
-	    		['DaLat',      2761473333333333,    1285.31],
-	    		['BaoLoc',      276147712232,    1285.31],
-	      ]);
 
-	      var options = {
-	        region: 'VN',
-	        displayMode: 'markers',
-	        colorAxis: {colors: ['#e7711c', '#4374e0']} // orange to blue
-	      };
-	      // chart_div 1 : create Map chart
-	      var chart = new google.visualization.GeoChart(document.getElementById('chart_div1'));
-	      // activate Map chart
-	      chart.draw(data, options);
-    };
 
-    function drawChart1() {
-
-      var data = google.visualization.arrayToDataTable([
-        ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
-        ['365',    80.66,              1.67,      'bb',  33739900],
-        ['DEU',    79.84,              1.36,      'Europe',         81902307],
-        ['DNK',    78.6,               1.84,      'Europe',         5523095],
-        ['EGY',    72.73,              2.78,      'Middle East',    79716203],
-        ['GBR',    80.05,              2,         'Europe',         61801570],
-        ['IRN',    72.49,              1.7,       'Middle East',    73137148],
-        ['IRQ',    68.09,              4.77,      'Middle East',    31090763],
-        ['ISR',    81.55,              2.96,      'Middle East',    7485600],
-        ['RUS',    68.6,               1.54,      'Europe',         141850000],
-        ['1000',    78.09,              2.05,      'North America',  307007000]
-      ]);
-
-      var options = {
-        title: 'Segment attractiveness (size, growth, strategic priorities)',
-        hAxis: {title: 'Ability to win (propensity to buy)'},
-        vAxis: {title: 'Est. average deal size'},
-        bubble: {
-          textStyle: {
-            auraColor: 'none',
-          }
-        },
-        height: 400,
-		legend : {position: 'top', textStyle: {color: 'blue', fontSize: 16}}
-      };
-
-      var chart = new google.visualization.BubbleChart(document.getElementById('noAura'));
-
-      chart.draw(data, options);
-    };
-
-	function drawTrendlines() {     
-       var data = google.visualization.arrayToDataTable([
-         ['Element', 'Density', { role: 'style' }],
-         ['Copper', 8.94, '#b87333'],            // RGB value
-         ['Silver', 10.49, 'silver'],            // English color name
-         ['Gold', 19.30, 'gold'],
-		 ['Platinum', 21.45, 'color: #e5e4e2' ], // CSS-style declaration
-      ]);
-
-      var options = {
-        title: 'Motivation and Energy Level Throughout the Day',
-        hAxis: {
-          title: 'Time of Day',
-        },
-        vAxis: {
-          title: 'Rating (scale of 1-10)'
-        }
-      };
-      // chart div 1 2: create column chart
-      var chart2 = new google.visualization.ColumnChart(document.getElementById('chart_div2'));
-      var chart3 = new google.visualization.ColumnChart(document.getElementById('chart_div3'));
-      var chart4 = new google.visualization.ColumnChart(document.getElementById('chart_div4'));
-      var chart5 = new google.visualization.ColumnChart(document.getElementById('chart_div5'));
-      // activate column chart
-      chart2.draw(data, options);
-      chart3.draw(data, options);
-      chart4.draw(data, options);
-      chart5.draw(data, options);
-    }
