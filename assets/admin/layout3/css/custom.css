@@ -604,3 +604,52 @@ hr {
 .select-query-action {
     width: 0%;
 }
+
+.select-query {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.text-query {
+    width: 30%
+}
+
+.label-search-slug {
+    background: #efefef;
+    color: #666;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 10px;
+    padding: .6em .6em;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.note-password {
+    color: #ff0000;
+}
+
+.action-tab {
+    margin-right: 2px;
+}
+
+.lable-filter {
+    margin-right: 3px;
+    background: #FDE428;
+    color: #002E5B;
+}
+
+.filter-form-control {
+    width: 300px;
+}
+
+.filter-value-min {
+    margin-bottom: 5px;
+}
+
+.filter-value-max {
+    margin-bottom: 5px;
+}

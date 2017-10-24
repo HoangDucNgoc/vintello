@@ -91,14 +91,23 @@
 /***** mr.ngoc */
 
 @media (max-width: 575px) {
-    .select-query {
-        margin-bottom: 5px;
+    .back-button {
+        margin-top: 5px;
+    }
+    .filter-form-control {
+        width: 150px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .select-query {
-        margin-bottom: 5px;
+    .back-button {
+        margin-top: 5px;
+    }
+    .action-tab {
+        margin-top: 5px;
+    }
+    .filter-form-control {
+        width: 200px;
     }
 }
 
@@ -106,14 +115,17 @@
     .select-action {
         z-index: -999;
     }
-    .select-query {
-        margin-bottom: 5px;
+    .action-tab {
+        margin-top: 3px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .select-action {
         z-index: -999;
+    }
+    .select-query {
+        margin-bottom: 5px;
     }
 }
 
