@@ -90,12 +90,36 @@
 
 /***** mr.ngoc */
 
+@media (min-width: 320px) and (max-width: 574px) {
+    .back-button {
+        margin-top: 5px;
+    }
+    .filter-form-control {
+        width: 150px;
+    }
+    .chart_wrap {
+        padding-bottom: 63% !important;
+    }
+    .action-tab {
+        margin-top: 5px;
+    }
+    .total-filter {
+        margin-top: 5px;
+    }
+}
+
 @media (max-width: 575px) {
     .back-button {
         margin-top: 5px;
     }
     .filter-form-control {
         width: 150px;
+    }
+    .chart_wrap {
+        padding-bottom: 55%;
+    }
+    .total-filter {
+        margin-top: 5px;
     }
 }
 
@@ -109,6 +133,12 @@
     .filter-form-control {
         width: 200px;
     }
+    .chart_wrap {
+        padding-bottom: 33%;
+    }
+    .total-filter {
+        margin-top: 5px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -116,7 +146,18 @@
         z-index: -999;
     }
     .action-tab {
-        margin-top: 3px;
+        margin-top: 5px;
+    }
+    .chart_wrap {
+        padding-bottom: 25%;
+    }
+
+    .total-filter {
+        margin-top: 5px;
+    }
+
+    .margin-action-right {
+        margin-right: 15px;
     }
 }
 
@@ -127,10 +168,21 @@
     .select-query {
         margin-bottom: 5px;
     }
+    .chart_wrap {
+        padding-bottom: 20%;
+    }
+    .action-tab {
+        margin-top: 5px;
+    }
 }
 
 @media (min-width: 1200px) {
     .select-action {
         z-index: -999;
     }
+    .chart_wrap {
+        padding-bottom: 15%;
+    }
+
+
 }

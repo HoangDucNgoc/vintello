@@ -26,8 +26,8 @@ function drawChartTypeBar() {
     var options = {
         title: 'By revenue ',
         titleTextStyle: {
-            color: '#002E5B',    // any HTML string color ('red', '#cc00cc')
-             fontSize: 16, // 12, 18 whatever you want (don't specify px)
+            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
+            fontSize: 16, // 12, 18 whatever you want (don't specify px)
         },
         legend: {
             position: 'none'
@@ -46,8 +46,8 @@ function drawChartTypeBar() {
     var options1 = {
         title: 'By profit',
         titleTextStyle: {
-            color: '#002E5B',    // any HTML string color ('red', '#cc00cc')
-             fontSize: 16, // 12, 18 whatever you want (don't specify px)
+            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
+            fontSize: 16, // 12, 18 whatever you want (don't specify px)
         },
         legend: {
             position: 'none'
@@ -66,8 +66,8 @@ function drawChartTypeBar() {
     var options2 = {
         title: 'By employee counts',
         titleTextStyle: {
-            color: '#002E5B',    // any HTML string color ('red', '#cc00cc')
-             fontSize: 16, // 12, 18 whatever you want (don't specify px)
+            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
+            fontSize: 16, // 12, 18 whatever you want (don't specify px)
         },
         legend: {
             position: 'none'
@@ -109,12 +109,12 @@ function drawChart() {
     var options = {
         title: 'By verticals',
         titleTextStyle: {
-            color: '#002E5B',    // any HTML string color ('red', '#cc00cc')
-             fontSize: 16, // 12, 18 whatever you want (don't specify px)
+            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
+            fontSize: 16, // 12, 18 whatever you want (don't specify px)
         },
         legend: 'Right',
         // set percent
-        sliceVisibilityThreshold: .2,
+        pieSliceText: 'percentage',
         // format color 
         slices: {
             0: {
@@ -123,16 +123,19 @@ function drawChart() {
             1: {
                 color: '#687899'
             },
-            2 :{
-              color : '#B2BBCF'
+            2: {
+                color: '#B2BBCF'
             }
-        }
+        },
+        width: '100%',
+        height: '100%',
+       
     };
     var options1 = {
         title: 'By countries',
         titleTextStyle: {
-            color: '#002E5B',    // any HTML string color ('red', '#cc00cc')
-             fontSize: 16, // 12, 18 whatever you want (don't specify px)
+            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
+            fontSize: 16, // 12, 18 whatever you want (don't specify px)
         },
         legend: 'Right',
         // set percent
@@ -145,38 +148,44 @@ function drawChart() {
             1: {
                 color: '#687899'
             },
-            2 :{
-              color : '#B2BBCF'
+            2: {
+                color: '#B2BBCF'
             }
-        }
+        },
+        width: '100%',
+        height: '100%',
+        
     };
     var options2 = {
         title: 'By cities',
         titleTextStyle: {
-            color: '#002E5B',    // any HTML string color ('red', '#cc00cc')
-             fontSize: 16, // 12, 18 whatever you want (don't specify px)
+            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
+            fontSize: 16, // 12, 18 whatever you want (don't specify px)
         },
         legend: 'Right',
         // set percent
         sliceVisibilityThreshold: .2,
         // format color 
         slices: {
-           0: {
+            0: {
                 color: '#53617B'
             },
             1: {
                 color: '#687899'
             },
-            2 :{
-              color : '#B2BBCF'
+            2: {
+                color: '#B2BBCF'
             }
-        }
+        },
+        width: '100%',
+        height: '100%',
+        
     };
     var options3 = {
         title: 'By cities',
         titleTextStyle: {
-            color: '#002E5B',    // any HTML string color ('red', '#cc00cc')
-             fontSize: 16, // 12, 18 whatever you want (don't specify px)
+            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
+            fontSize: 16, // 12, 18 whatever you want (don't specify px)
         },
         legend: 'Right',
         // set percent
@@ -194,8 +203,8 @@ function drawChart() {
     var options4 = {
         title: 'By cities',
         titleTextStyle: {
-            color: '#002E5B',    // any HTML string color ('red', '#cc00cc')
-             fontSize: 16, // 12, 18 whatever you want (don't specify px)
+            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
+            fontSize: 16, // 12, 18 whatever you want (don't specify px)
         },
         legend: 'Right',
         // set percent
@@ -213,8 +222,8 @@ function drawChart() {
     var options5 = {
         title: 'By cities',
         titleTextStyle: {
-            color: '#002E5B',    // any HTML string color ('red', '#cc00cc')
-             fontSize: 16, // 12, 18 whatever you want (don't specify px)
+            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
+            fontSize: 16, // 12, 18 whatever you want (don't specify px)
         },
         legend: 'Right',
         // set percent

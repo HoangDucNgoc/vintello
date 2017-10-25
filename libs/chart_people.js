@@ -126,7 +126,9 @@ function drawChart() {
             2: {
                 color: '#B2BBCF'
             }
-        }
+        },
+        width: '100%',
+        height: '100%',
     };
     var options1 = {
         title: 'By countries',
@@ -148,7 +150,9 @@ function drawChart() {
             2: {
                 color: '#B2BBCF'
             }
-        }
+        },
+        width: '100%',
+        height: '100%',
     };
     var options2 = {
         title: 'By cities',
@@ -170,85 +174,16 @@ function drawChart() {
             2: {
                 color: '#B2BBCF'
             }
-        }
-    };
-    var options3 = {
-        title: 'By cities',
-        titleTextStyle: {
-            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
-            fontSize: 16, // 12, 18 whatever you want (don't specify px)
         },
-        legend: 'Right',
-        // set percent
-        sliceVisibilityThreshold: .2,
-        // format color 
-        slices: {
-            0: {
-                color: '#53617B'
-            },
-            1: {
-                color: '#687899'
-            },
-            2: {
-                color: '#B2BBCF'
-            }
-        }
+        width: '100%',
+        height: '100%',
     };
-    var options4 = {
-        title: 'By cities',
-        titleTextStyle: {
-            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
-            fontSize: 16, // 12, 18 whatever you want (don't specify px)
-        },
-        legend: 'Right',
-        // set percent
-        sliceVisibilityThreshold: .2,
-        // format color 
-        slices: {
-            0: {
-                color: '#53617B'
-            },
-            1: {
-                color: '#687899'
-            },
-            2: {
-                color: '#B2BBCF'
-            }
-        }
-    };
-    var options5 = {
-        title: 'By cities',
-        titleTextStyle: {
-            color: '#002E5B', // any HTML string color ('red', '#cc00cc')
-            fontSize: 16, // 12, 18 whatever you want (don't specify px)
-        },
-        legend: 'Right',
-        // set percent
-        sliceVisibilityThreshold: .2,
-        // format color 
-        slices: {
-            0: {
-                color: '#53617B'
-            },
-            1: {
-                color: '#687899'
-            },
-            2: {
-                color: '#B2BBCF'
-            }
-        }
-    };
+   
     // create chart
     var chart10 = new google.visualization.PieChart(document.getElementById('piechart'));
     var chart2 = new google.visualization.PieChart(document.getElementById('piechart1'));
     var chart3 = new google.visualization.PieChart(document.getElementById('piechart2'));
-    var chart101 = new google.visualization.PieChart(document.getElementById('piechart3'));
-    var chart21 = new google.visualization.PieChart(document.getElementById('piechart4'));
-    var chart31 = new google.visualization.PieChart(document.getElementById('piechart5'));
     chart10.draw(data, options);
     chart2.draw(data, options1);
     chart3.draw(data, options2);
-    chart101.draw(data, options3);
-    chart21.draw(data, options4);
-    chart31.draw(data, options5);
 };
