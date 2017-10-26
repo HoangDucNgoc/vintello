@@ -188,8 +188,10 @@
                                     </span>
                                 </div>
                                 <div class="md-checkbox-list col-md-12">
-                                        <input type="text" class="form-control  filter-value-min " placeholder="Min">
-                                        <input type="text" class="form-control  filter-value-max " placeholder="Max">
+                                    <div class="btn-group" style="width: 15%;">From</div>
+                                    <input type="text" class="form-control filter-value-min btn-group" placeholder="Min" id="revenue-from" style="width: 83%;">
+                                    <div class="btn-group" style="width: 15%;">To</div>
+                                    <input type="text" class="form-control btn-group filter-value-max " placeholder="Max" style="width: 83%;">
                                 </div>
                             </div>
                         </div>
@@ -227,12 +229,15 @@
                         </div>
                     </div>
 
-                    <div class="btn-group select-query text-query " >
-                        <input type="text" placeholder="Keyword" class="form-control border-3px" />
-                    </div>
-
-                    <div class="btn-group select-query ">
-                        <button type="button" class="btn">Clear all</button>
+                    <div class="btn-group select-query text-query float-right" >
+                        <div class="input-cont btn-group">
+                            <input type="text" placeholder="Keyword" class="form-control border-3px" />
+                        </div>
+                        <span class="input-group-btn btn-group" style="width: 10%;">
+                            <button type="button select-query" class="btn">
+                                Clear All
+                            </button>
+                        </span>
                     </div>
                 </div>
                 <hr class="hidden-xs" style="width: 98%; margin: 15px auto; border: 0.5px solid #002E5B;">
@@ -448,8 +453,8 @@
                         </div>
                     </div>
                     <!-- END OF DATA AREA -->
-                    <a class="btn float-right next-button" href="export.html">Next</a>
-                    <a class="btn float-right next-button back-button" href="company.html">Back</a>
+                    <a class="btn float-right next-button margin-bottom-20px" href="export.html">Next</a>
+                    <a class="btn float-right next-button back-button margin-bottom-20px" href="company.html">Back</a>
                     
                 </div>
             </div>

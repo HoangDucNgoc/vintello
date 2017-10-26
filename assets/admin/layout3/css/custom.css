@@ -699,3 +699,14 @@ hr {
 .margin-action-right {
     margin-right: 30px;
 }
+
+.forget-password{
+    float: left;
+    margin-bottom: 5px;
+    width: 60%;
+}
+
+.clearall-input{
+    width: 79%;
+    float: left;
+}
