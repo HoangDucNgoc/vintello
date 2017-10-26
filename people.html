@@ -144,7 +144,8 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- DROPDOWN BEGIN -->
-                <div class="col-md-12 padding-bottom-20">
+                <div class="col-md-12 padding-bottom-20 filter-container">
+                    <div class="col-xs-12 col-md-6 col-sm-12">
                     <div class="btn-group select-query ">
                         <button type="button" class="btn">Department</button>
                         <button type="button" class="btn dropdown-toggle border-left-1px" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
@@ -228,16 +229,10 @@
                             </div>
                         </div>
                     </div>
-
+                    </div>
                     <div class="btn-group select-query text-query float-right" >
-                        <div class="input-cont btn-group">
-                            <input type="text" placeholder="Keyword" class="form-control border-3px" />
-                        </div>
-                        <span class="input-group-btn btn-group" style="width: 10%;">
-                            <button type="button select-query" class="btn">
-                                Clear All
-                            </button>
-                        </span>
+                        <input type="text" id="search-keyword" placeholder="Keyword" id="" class="form-control border-3px clearall-input btn-group" />
+                        <button type="button" class="btn btn-group">Clear all</button>
                     </div>
                 </div>
                 <hr class="hidden-xs" style="width: 98%; margin: 15px auto; border: 0.5px solid #002E5B;">
@@ -273,7 +268,7 @@
                                     <li>
                                         <a href="#tab2" data-toggle="tab">Dashboard</a>
                                     </li>
-                                    <li class="action-tab">
+                                    <li class="action-tab datatable-search-align">
                                         <div class="input-group">
                                             <div class="input-cont">
                                                 <input type="text" placeholder="Look up with the list" class="form-control border-3px" />

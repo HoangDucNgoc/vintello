@@ -146,7 +146,7 @@
         z-index: -999;
     }
     .action-tab {
-        margin-top: 5px;
+
     }
     .chart_wrap {
         padding-bottom: 25%;
@@ -172,7 +172,6 @@
         padding-bottom: 20%;
     }
     .action-tab {
-        margin-top: 5px;
     }
 }
 
@@ -183,6 +182,91 @@
     .chart_wrap {
         padding-bottom: 15%;
     }
+}
 
+@media (max-width: 1323px){
+    .clearall-input{
+        width: 78%;
+    }
+}
 
+@media (max-width: 1264px){
+    .clearall-input{
+        width: 77%;
+    }
+}
+
+@media (max-width: 1210px){
+    .clearall-input{
+        width: 76%;
+    }
+}
+
+@media (max-width: 1192px){
+    .text-query{
+        width: 87%;
+    }
+    .filter-container{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1347px){
+    .datatable-search-align{
+        margin: 0 10% 0 10%;
+    }
+}
+
+@media (max-width: 1329px){
+    .datatable-search-align{
+        margin: 0 10% 0 9%;
+    }
+}
+
+@media (max-width: 1314px){
+    .datatable-search-align{
+        margin: 0 10% 0 8%;
+    }
+}
+
+@media (max-width: 1297px){
+    .datatable-search-align{
+        margin: 0 10% 0 7%;
+    }
+}
+
+@media (max-width: 1282px){
+    .datatable-search-align{
+        margin: 0 10% 0 6%;
+    }
+}
+
+@media (max-width: 1267px){
+    .datatable-search-align{
+        margin: 0 10% 0 5%;
+    }
+}
+
+@media (max-width: 1252px){
+    .datatable-search-align{
+        margin: 0 10% 0 4%;
+    }
+}
+
+@media (max-width: 1238px){
+    .datatable-search-align{
+        margin: 0 10% 0 3%;
+    }
+}
+
+@media (max-width: 1224px){
+    .datatable-search-align{
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px){
+    .datatable-search-align{
+        margin: 0;
+    }
 }

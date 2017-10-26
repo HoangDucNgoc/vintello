@@ -601,8 +601,6 @@ hr {
 }
 
 .select-query {
-    margin-bottom: 5px;
-    margin-top: 5px;
 }
 
 .text-query {
@@ -709,4 +707,8 @@ hr {
 .clearall-input{
     width: 79%;
     float: left;
+}
+
+.datatable-search-align{
+    margin: 0 10% 0 11.1%;
 }
