@@ -17,11 +17,11 @@ function drawChartTypeBar() {
         ['Year', 'Visitations', {
             role: 'style'
         }],
-        ['2010', 10, 'color: #49546B'],
-        ['2020', 14, 'color: #53617B'],
-        ['2030', 16, 'color: #7284A8'],
-        ['2040', 22, 'color: #8B9AB7'],
-        ['2050', 28, 'color : #D8DDE7']
+        ['2010', 10, 'color: #0069A6'],
+        ['2020', 14, 'color: #1978AF'],
+        ['2030', 16, 'color: #338788'],
+        ['2040', 22, 'color: #4C96C1'],
+        ['2050', 28, 'color : #66A5CA']
     ]);
     var options = {
         title: 'By revenue ',
@@ -118,13 +118,13 @@ function drawChart() {
         // format color 
         slices: {
             0: {
-                color: '#53617B'
+                color: '#0069A6'
             },
             1: {
-                color: '#687899'
+                color: '#1978AF'
             },
             2: {
-                color: '#B2BBCF'
+                color: '#338788'
             }
         },
         width: '100%',
@@ -143,13 +143,13 @@ function drawChart() {
         // format color 
         slices: {
             0: {
-                color: '#53617B'
+                color: '#0069A6'
             },
             1: {
-                color: '#687899'
+                color: '#1978AF'
             },
             2: {
-                color: '#B2BBCF'
+                color: '#338788'
             }
         },
         width: '100%',
@@ -168,13 +168,13 @@ function drawChart() {
         // format color 
         slices: {
             0: {
-                color: '#53617B'
+                color: '#0069A6'
             },
             1: {
-                color: '#687899'
+                color: '#1978AF'
             },
             2: {
-                color: '#B2BBCF'
+                color: '#338788'
             }
         },
         width: '100%',

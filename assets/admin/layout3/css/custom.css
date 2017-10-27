@@ -601,6 +601,8 @@ hr {
 }
 
 .select-query {
+    margin-bottom: 5px;
+    margin-top: 3px;
 }
 
 .text-query {
@@ -622,17 +624,20 @@ hr {
 }
 
 .note-password {
-    color: #ff0000;
+    color: #877575;
 }
 
 .action-tab {
     margin-right: 2px;
+    margin-top: 3px;
 }
 
 .lable-filter {
     margin-right: 3px;
     background: #FDE428;
     color: #002E5B;
+    height: 26px;
+    text-align: right;
 }
 
 .filter-form-control {
@@ -688,6 +693,12 @@ hr {
 
 .input-text-export {
     height: 28px;
+    margin-left: -60px;
+}
+
+.input-text-export-radio{
+    height: 28px;
+    margin-left: -120px;
 }
 
 .action-right {
@@ -710,5 +721,9 @@ hr {
 }
 
 .datatable-search-align{
-    margin: 0 10% 0 11.1%;
+    margin: 3px 10% 0 11.1%;
+}
+
+.description-company{
+    margin-bottom: 5px;
 }

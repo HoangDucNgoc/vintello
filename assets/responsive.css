@@ -100,11 +100,14 @@
     .chart_wrap {
         padding-bottom: 63% !important;
     }
-    .action-tab {
-        margin-top: 5px;
-    }
     .total-filter {
         margin-top: 5px;
+    }
+    .input-text-export {
+        margin-left: 0px;
+    }
+    .input-text-export-radio {
+        margin-left: 0px;
     }
 }
 
@@ -121,13 +124,16 @@
     .total-filter {
         margin-top: 5px;
     }
+    .input-text-export {
+        margin-left: 0px;
+    }
+    .input-text-export-radio {
+        margin-left: 0px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     .back-button {
-        margin-top: 5px;
-    }
-    .action-tab {
         margin-top: 5px;
     }
     .filter-form-control {
@@ -139,31 +145,38 @@
     .total-filter {
         margin-top: 5px;
     }
+    .input-text-export {
+        margin-left: 0px;
+    }
+    .input-text-export-radio {
+        margin-left: 0px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .select-action {
-        z-index: -999;
-    }
-    .action-tab {
-
+        display: none !important;
     }
     .chart_wrap {
         padding-bottom: 25%;
     }
-
     .total-filter {
         margin-top: 5px;
     }
-
     .margin-action-right {
         margin-right: 15px;
+    }
+    .input-text-export {
+        margin-left: 0px;
+    }
+    .input-text-export-radio {
+        margin-left: 0px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .select-action {
-        z-index: -999;
+        display: none;
     }
     .select-query {
         margin-bottom: 5px;
@@ -171,102 +184,109 @@
     .chart_wrap {
         padding-bottom: 20%;
     }
-    .action-tab {
+    .select-action {
+        display: none !important;
+    }
+    .input-text-export {
+        margin-left: -55px;
+    }
+    .input-text-export-radio {
+        margin-left: -24px;
     }
 }
 
 @media (min-width: 1200px) {
     .select-action {
-        z-index: -999;
+        display: none !important;
     }
     .chart_wrap {
         padding-bottom: 15%;
     }
 }
 
-@media (max-width: 1323px){
-    .clearall-input{
+@media (max-width: 1323px) {
+    .clearall-input {
         width: 78%;
     }
 }
 
-@media (max-width: 1264px){
-    .clearall-input{
+@media (max-width: 1264px) {
+    .clearall-input {
         width: 77%;
     }
 }
 
-@media (max-width: 1210px){
-    .clearall-input{
+@media (max-width: 1210px) {
+    .clearall-input {
         width: 76%;
     }
 }
 
-@media (max-width: 1192px){
-    .text-query{
+@media (max-width: 1192px) {
+    .text-query {
         width: 87%;
     }
-    .filter-container{
+    .filter-container {
         text-align: center;
     }
 }
 
-@media (max-width: 1347px){
-    .datatable-search-align{
-        margin: 0 10% 0 10%;
+@media (max-width: 1347px) {
+    .datatable-search-align {
+        margin: 3px 10% 0 10%;
     }
 }
 
-@media (max-width: 1329px){
-    .datatable-search-align{
-        margin: 0 10% 0 9%;
+@media (max-width: 1329px) {
+    .datatable-search-align {
+        margin: 3px 10% 0 9%;
     }
 }
 
-@media (max-width: 1314px){
-    .datatable-search-align{
-        margin: 0 10% 0 8%;
+@media (max-width: 1314px) {
+    .datatable-search-align {
+        margin: 3px 10% 0 8%;
     }
 }
 
-@media (max-width: 1297px){
-    .datatable-search-align{
-        margin: 0 10% 0 7%;
+@media (max-width: 1297px) {
+    .datatable-search-align {
+        margin: 3px 10% 0 7%;
     }
 }
 
-@media (max-width: 1282px){
-    .datatable-search-align{
-        margin: 0 10% 0 6%;
+@media (max-width: 1282px) {
+    .datatable-search-align {
+        margin: 3px 10% 0 6%;
     }
 }
 
-@media (max-width: 1267px){
-    .datatable-search-align{
-        margin: 0 10% 0 5%;
+@media (max-width: 1267px) {
+    .datatable-search-align {
+        margin: 3px 10% 0 5%;
     }
 }
 
-@media (max-width: 1252px){
-    .datatable-search-align{
-        margin: 0 10% 0 4%;
+@media (max-width: 1252px) {
+    .datatable-search-align {
+        margin: 3px 10% 0 4%;
     }
 }
 
-@media (max-width: 1238px){
-    .datatable-search-align{
-        margin: 0 10% 0 3%;
+@media (max-width: 1238px) {
+    .datatable-search-align {
+        margin: 3px 10% 0 3%;
     }
 }
 
-@media (max-width: 1224px){
-    .datatable-search-align{
-        margin: 0;
+@media (max-width: 1224px) {
+    .datatable-search-align {
+        margin: 3px;
     }
 }
 
-@media (max-width: 767px){
-    .datatable-search-align{
-        margin: 0;
+@media (max-width: 767px) {
+    .datatable-search-align {
+        margin: 3px;
     }
 }

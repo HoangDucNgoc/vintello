@@ -138,7 +138,7 @@
             <div class="row">
                 <!-- TAG BEGIN -->
                 <div class="col-md-12 padding-bottom-5">
-                    <span class="hidden-xs label label-danger lable-filter">Company  : </span>
+                    <span class="hidden-xs label label-danger lable-filter col-sm-1">Company  </span>
                     <div class="hidden-xs label label-search-slug">Company IS NOT Hidden<a href="#" class="kill-filter" data-query-tree-index="0"> x</a>
                     </div>
                     <div class="hidden-xs label label-search-slug">Industries LIKE Advertising OR Industries LIKE Agriculture OR Industries LIKE Analytics OR Industries LIKE Automotive<a href="#" class="kill-filter" data-query-tree-index="0"> x</a>
@@ -146,7 +146,7 @@
                    
                 </div>
                 <div class="col-md-12 padding-bottom-20">
-                    <span class=" hidden-xs label label-danger lable-filter"> People  : </span>
+                    <span class=" hidden-xs label label-danger lable-filter col-sm-1"> People  </span>
                     <div class="hidden-xs label label-search-slug">Industries LIKE Advertising OR Industries LIKE Agriculture OR Industries LIKE Analytics OR Industries LIKE Automotive<a href="#" class="kill-filter" data-query-tree-index="0"> x</a>
                     </div>
                     
@@ -193,7 +193,7 @@
             				<div class="portlet light bordered">
 		                    	<div class="portlet-body">
                                     <div class="scroller" style="height:150px" data-rail-visible="1" data-rail-color="yellow" data-handle-color="#a1b2bd">
-                                        <h4 class="margin-left-5per">Mondatory</h4>
+                                        <h4 class="margin-left-5per">Mandatory</h4>
                                         <div class="data-box-align">Email</div>
                     				</div>
                     			</div>
@@ -231,41 +231,25 @@
 						<div class="form-group col-md-12 padding-left-30">
 							<div class="col-md-12 margin-bottom-1per">
 								<label for="leadNumber" class="control-label col-md-3" style="text-align: left;padding-left: 0;">Maximum number of leads per company</label>
-								<div class="col-md-3">
+								<div class="col-md-2">
 									<input type="text" class="form-control input-text-export" id="leadNumber">
 								</div>
 							</div>
 							<div class="col-md-12">
 								<p>BizDirect will search for up to 300,000 lead in total. Would you limit this number?</p>
-								<div class="md-checkbox">
-	                                <input class="md-check" id="checkbox1" type="checkbox">
-	                                    <label for="checkbox1">
-	                                        <span>
-	                                        </span>
-	                                        <span class="check">
-	                                        </span>
-	                                        <span class="box">
-	                                        </span>
-	                                        No, return as many as possible
-	                                    </label>
-	                                </input>
-	                            </div>
-		                        <div class="md-checkbox">
-		                            <input checked="" class="md-check" id="checkbox2" type="checkbox">
-		                                <label for="checkbox2" class="col-md-3 margin-top-5">
-		                                    <span>
-		                                    </span>
-		                                    <span class="check">
-		                                    </span>
-		                                    <span class="box">
-		                                    </span>
-		                                    Yes, limit the number of leads in the list to:
-		                                </label>
-		                                <div class="col-md-3">
-			                                <input class="form-control border-3px input-text-export" type="text"/>
-			                            </div>
-		                            </input>
-		                        </div>
+                                <div class="icheck-list">
+                                    <label>
+                                        <input type="radio" name="radio1" class="icheck"> No, return as many as possible
+                                    </label>
+                                        <label class="col-md-4" style="margin-left: -15px;">
+                                            <input type="radio" name="radio1" class="icheck">Yes, limit the number of leads in the list to:
+                                        </label>
+                                        <div class="col-md-2">
+                                            <input class="form-control border-3px input-text-export-radio" type="text"/>
+                                        </div>
+                                    
+                                </div>
+								
 							</div>
 							<div class="col-md-12 margin-top-1per">
 								<button class="btn btn-group">Update</button>
