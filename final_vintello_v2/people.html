@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport">
+            <title>
+                Discover People
+            </title>
+            <!-- css library -->
+            <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+            <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+            <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+            <!-- BEGIN THEME STYLES -->
+            <!-- DATATABLE CSS -->
+            <link href="assets/admin/layout3/css/layout.css" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" type="text/css" href="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+	        <!-- END OF DATATABLE CSS -->
+	        <link href="assets/global/plugins/jquery-tags-input/jquery.tagsinput.css" rel="stylesheet" type="text/css"/>
+	        <link href="assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+	        <link href="assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
+            <link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css">
+	        <!-- FULLPAGE SCROLLDOWN PLUGIN BEGIN -->
+	        <link href="libs/fullPage.js-master/jquery.fullPage.css" rel="stylesheet" type="text/css"/>
+	        <!-- FULLPAGE SCROLLDOWN END -->
+	        <!-- CHART DONATION METER CSS -->
+			<link href="chart/css-donation-thermometer/css/style.css" rel="stylesheet">
+	        <!-- END OF CHART DONATION METTER -->
+	        <!-- END OF THEME STYLES -->
+	        <!-- Step library -->
+	        <link href="libs/bootstrap-nav-wizard-master/bootstrap-nav-wizard.css" rel="stylesheet">
+	        <!-- custom css -->
+	        <link href="assets/admin/layout3/css/custom.css" rel="stylesheet">
+            <link href="assets/responsive.css" rel="stylesheet">
+    </head>
+    <body style="">
+        <nav class="navbar navbar-static-top">
+            <div class="disable-static-height">
+                <!-- BEGIN HEADER MENU -->
+                <div class=" header-login-form bg-yellow-crusta">
+                    <div class="container-fluid">
+                        <div class="col-md-6 col-sm-12 col-xs-12 logo">
+                            <a href="homepage.html">BizDirect Asia</a>
+                        </div>
+                        <!-- BEGIN HEADER SEARCH BOX -->
+                        <div class="top-menu col-md-6 col-xs-12 col-sm-12">
+                            <div class="float-right">
+                            <!-- USER BEGIN -->
+                                <div class="btn-group">
+                                    <form action="javascript:;" class="alert alert-borderless disable-padding">
+                                        <div class="input-group">
+                                            <span class="input-group-btn" style="width: 10%;">
+                                                <button type="button" class="btn">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                </button>
+                                            </span>
+                                            <div class="input-cont">
+                                                <input type="text" placeholder="Look up for any company or people" class="form-control border-3px" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="btn-group">
+                                    <ul class="nav navbar-nav pull-right">
+                                        <li class="dropdown dropdown-user dropdown-dark">
+                                        <a class="dropdown-toggle" data-close-others="true" data-hover="dropdown" data-toggle="dropdown" href="javascript:;">
+                                            <div class="username username-hide-mobile vintello-blue-text">My List<i style="padding-left: 10px; line-height: 50px;" class="fa fa-angle-down"></i></div>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-default">
+                                                <li class="li-item">
+                                                    <a href="#">
+                                                        <i class="icon-user">
+                                                        </i>
+                                                        Lists
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <ul class="nav navbar-nav pull-right">
+                                        <li class="dropdown dropdown-user dropdown-dark">
+                                            <a class="dropdown-toggle" data-close-others="true" data-hover="dropdown" data-toggle="dropdown" href="javascript:;">
+                                                <img alt="" class="img-circle" src="assets/admin/layout3/img/avatar9.jpg">
+                                                    <span class="username username-hide-mobile vintello-blue-text">
+                                                        Nick
+                                                    </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-default">
+                                                <li class="li-item">
+                                                    <a href="profile_user.html">
+                                                        <i class="icon-user">
+                                                        </i>
+                                                        My Profile
+                                                    </a>
+                                                </li>
+                                                <li class="li-item">
+                                                    <a href="login.html">
+                                                        <i class="icon-key">
+                                                        </i>
+                                                        Log Out
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- END USER LOGIN DROPDOWN -->
+                                    </ul>
+                                    <!-- USER END -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END HEADER SEARCH BOX -->
+                    </div>
+                </div>
+                <!-- END HEADER MENU -->
+            </div>
+            <div class="col-md-12 padding-top-15 responsive-hidden">
+                <!-- AUTO UPPERCASE STRING AREA AND STEP -->
+                <ul class="nav nav-wizard uppercase responsive-full-screen col-md-6">
+                    <li >
+                        <a href="company.html">
+                            COMPANY CRITERIA
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            person criteria
+                        </a>
+                    </li>
+                    <li>
+                        <a href="export.html">
+                            export
+                        </a>
+                    </li>
+                </ul>
+                <div class="col-md-6 total-filter" >
+                    <span class="total-filter-company">Companies selected : 10,000</span>
+                    <span>People selected : 10,000</span>
+                    
+                </div>
+                <!-- END OF UPPERCASE AREA AND STEP -->
+            </div>
+        </nav>
+        <!-- STEP BEGIN -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- DROPDOWN BEGIN -->
+                <div class="col-md-12 padding-bottom-20 filter-container">
+                    <div class="col-xs-12 col-md-6 col-sm-12">
+                        <div class="btn-group select-query ">
+                            <button type="button" class="btn">Dep text-color-whiteartment</button>
+                            <button type="button" class="btn dropdown-toggle border-left-1px select-search" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+                            <div class="dropdown-menu hold-on-click dropdown-checkboxes text-color-blue" role="menu">
+                                <div class="form-group form-md-checkboxes filter-form-control">
+                                    <div class="md-checkbox-list col-md-12">
+                                        <div class="col-md-12 ">
+                                            <span>
+                                                SEARCH BY DEPARTMENT 
+                                            </span>
+                                        </div>
+                                        <br>
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" id="vertical-ckb-opt1" class="md-check">
+                                            <label for="vertical-ckb-opt1">
+                                            <span></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                            Department 1 </label>
+                                        </div>
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" id="vertical-ckb-opt2" class="md-check" checked>
+                                            <label for="vertical-ckb-opt2">
+                                            <span></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                            Department 1 </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group select-query ">
+                            <button type="button" class="btn" text-color-white>Senior</button>
+                            <button type="button" class="btn dropdown-toggle border-left-1px select-search" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+                            <div class="dropdown-menu hold-on-click dropdown-checkboxes text-color-blue" role="menu">
+                                <div class="form-group form-md-checkboxes filter-form-control">
+                                    <div class="md-checkbox-list col-md-12">
+                                        <div class="col-md-12 ">
+                                            <span>
+                                                SEARCH BY SENIOR 
+                                            </span>
+                                        </div>
+                                        <br>
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" id="vertical-ckb-opt1" class="md-check">
+                                            <label for="vertical-ckb-opt1">
+                                            <span></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                            Senior 1 </label>
+                                        </div>
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" id="vertical-ckb-opt2" class="md-check" checked>
+                                            <label for="vertical-ckb-opt2">
+                                            <span></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                            Senior 1 </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group select-query ">
+                            <button type="button" class="btn text-color-white">Phone</button>
+                            <button type="button" class="btn dropdown-toggle border-left-1px select-search" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+                            <div class="dropdown-menu hold-on-click dropdown-checkboxes text-color-blue" role="menu">
+                                <div class="form-group filter-form-control ">
+                                    <div class="col-md-12 ">
+                                        <span>
+                                            SEARCH BY PHONE
+                                        </span>
+                                    </div>
+                                    <div class="md-checkbox-list col-md-12">
+                                            <input type="text" class="form-control  filter-value-min " placeholder="Phone">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group select-query ">
+                            <button type="button" class="btn text-color-white">Email</button>
+                            <button type="button" class="btn dropdown-toggle border-left-1px select-search" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+                            <div class="dropdown-menu hold-on-click dropdown-checkboxes text-color-blue" role="menu">
+                                <div class="form-group filter-form-control ">
+                                    <div class="col-md-12 ">
+                                        <span>
+                                            SEARCH BY EMAIL 
+                                        </span>
+                                    </div>
+                                    <div class="md-checkbox-list col-md-12">
+                                            <input type="text" class="form-control  filter-value-min " placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group select-query text-query float-right" >
+                        <input type="text" id="search-keyword" placeholder="Keyword" id="" class="form-control border-3px clearall-input btn-group" />
+                        <button type="button" class="btn btn-group">Clear all</button>
+                    </div>
+                </div>
+                <hr class="hidden-xs" style="width: 98%; margin: 15px auto; border: 0.5px solid #002E5B;">
+                <!-- DROPDOWN END -->
+                <!-- TAG BEGIN -->
+                <!-- TAG BEGIN -->
+                <div class="col-md-12 padding-bottom-5">
+                    <span class="hidden-xs label label-danger lable-filter col-sm-1 text-color-white">Company  </span>
+                    <div class="hidden-xs label label-search-slug">Company IS NOT Hidden<a href="#" class="kill-filter" data-query-tree-index="0"> x</a>
+                    </div>
+                    <div class="hidden-xs label label-search-slug">Industries LIKE Advertising OR Industries LIKE Agriculture OR Industries LIKE Analytics OR Industries LIKE Automotive<a href="#" class="kill-filter" data-query-tree-index="0"> x</a>
+                    </div>
+                   
+                </div>
+                <div class="col-md-12 padding-bottom-20">
+                    <span class=" hidden-xs label label-danger lable-filter col-sm-1 text-color-white"> People  </span>
+                    <div class="hidden-xs label label-search-slug">Industries LIKE Advertising OR Industries LIKE Agriculture OR Industries LIKE Analytics OR Industries LIKE Automotive<a href="#" class="kill-filter" data-query-tree-index="0"> x</a>
+                    </div>
+                    
+                </div>
+                <hr style="width: 98%; margin: 15px auto; border: 0.5px solid #002E5B;">
+                <!-- DATA AREA -->
+                
+                <div class="col-md-12">
+                    <!-- BEGIN TAB PORTLET-->
+                    <div class="portlet light">
+                        <div class="portlet-body">
+                            <div class="tabbable tabbable-tabdrop">
+                                <ul class="nav nav-tabs uppercase" style="width: 100%;">
+                                    <li class="active">
+                                        <a href="#tab1" class="unactive-tab" data-toggle="tab">Selection</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab2" class="unactive-tab"  data-toggle="tab">Dashboard</a>
+                                    </li>
+                                    <li class="action-tab datatable-search-align">
+                                        <div class="input-group">
+                                            <div class="input-cont">
+                                                <input type="text" placeholder="Look up within the list" class="form-control border-3px" />
+                                            </div>
+                                            <span class="input-group-btn" style="width: 10%;">
+                                                <button type="button" class="btn">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="action-tab">
+                                        <button class="btn btn-group hidden-xs " data-toggle="tab" >Save</button>
+                                    </li>
+                                    <li class="action-tab">
+                                        <button class="btn btn-group hidden-xs">Export</button>
+                                    </li>
+                                    <li class="action-tab" >
+                                        <button class="btn btn-group hidden-xs">Share</button>
+                                    </li>
+                                    <li class="action-tab" >
+                                        <button class="btn btn-group hidden-xs" data-toggle="modal" href="#responsive" >Add-Edit Column</button>
+                                    </li>
+                                    <li class="select-action text-color-white">
+                                        <div class="btn-group select-query ">
+                                            <div class="input-group-btn  select-query-action text-color-white ">
+                                              <button type="button" class="text-color-white btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Action
+                                                <span class="fa fa-caret-down"></span></button>
+                                              <ul class="dropdown-menu">
+                                                <li class="li-item"><a href="#">Save</a></li>
+                                                <li class="li-item"><a href="#">Export</a></li>
+                                                <li class="li-item"><a href="#">Share</a></li>
+                                                <li class="li-item"><a  data-toggle="modal" href="#responsive" >Add-Edit Column</a></li>
+                                              </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                               
+                                <div class="tab-content col-md-12">
+                                    <div class="tab-pane active" id="tab1">
+                                        <div class="col-md-12 col-xs-12 col-sm-12">
+                                            <div  id="mattermark_info">Showing 1 to 50 of 4,128,911 entries (filtered from 4,128,912 total entries)</div>
+                                            <div class="portlet-body">
+                                                <table class="table table-striped table-bordered table-hover text-color-blue" id="sample_2">
+                                                <thead>
+                                                <tr>
+                                                    <th class="table-checkbox">
+                                                        <input type="checkbox" class="group-checkable" data-set="#sample_2 .checkboxes"/>
+                                                    </th>
+                                                    <th>
+                                                         Company
+                                                    </th>
+                                                    <th>
+                                                         Name
+                                                    </th>
+                                                    <th>
+                                                         Position
+                                                    </th>
+                                                    <th>
+                                                         Department
+                                                    </th>
+                                                    <th>
+                                                         Seniority
+                                                    </th>
+                                                    <th>
+                                                         Country
+                                                    </th>
+                                                    <th>
+                                                         City
+                                                    </th>
+                                                    <th>
+                                                         Phone
+                                                    </th>
+                                                    <th>
+                                                         Email
+                                                    </th>
+                                                    <th>
+                                                         Profile
+                                                    </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd gradeX">
+                                                    <td>
+                                                        <input type="checkbox" class="checkboxes" value="1"/>
+                                                    </td>
+                                                    <td>
+                                                         shuxer
+                                                    </td>
+                                                    <td>
+                                                        <a class="text-color-blue" href="mailto:shuxer@gmail.com">
+                                                        shuxer@gmail.com </a>
+                                                    </td>
+                                                    <td>
+                                                         120
+                                                    </td>
+                                                    <td class="center">
+                                                         12 Jan 2012
+                                                    </td>
+                                                    <td>
+                                                        Approved
+                                                    </td>
+                                                    <td>
+                                                         120
+                                                    </td>
+                                                    <td>
+                                                         120
+                                                    </td>
+                                                    <td>
+                                                         <a class="text-color-blue" href="#">Retrieve info</a>
+                                                    </td>
+                                                    <td>
+                                                         <a class="text-color-blue" href="#">Retrieve info</a>
+                                                    </td>
+                                                    <td>
+                                                         120
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                            </div>
+                                                    <!-- END EXAMPLE TABLE PORTLET-->
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab2">
+                                        <div class="col-md-12 col-xs-12 col-sm-12">
+                                            <div class="col-md-12" style="padding: 10px;">Total selected PEOPLE of 300,000 break down</div>
+                                            <div class="row ">
+                                                <div class="col-md-4 chart_wrap ">
+                                                    <div class="chart" id="piechart">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 chart_wrap ">
+                                                    <div class="chart" id="piechart1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 chart_wrap ">
+                                                    <div class="chart" id="piechart2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row row-chart">
+                                                <div class="col-md-4 chart_wrap">
+                                                    <div id="barchart1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 chart_wrap">
+                                                    <div id="barchart2">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 chart_wrap  chart-box-last margin-right-1">
+                                                    <div id="barchart3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr style="width: 98%; margin: 15px auto; border: 0.5px solid #002E5B;">
+                                            <div class="col-md-12" style="padding: 10px;">Of wich, Total selected PEOPLE of 300,000 break down</div>
+                                            <div class="row row-chart">
+                                                <div class="col-md-4 chart_wrap">
+                                                    <div id="barchart4">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 chart_wrap">
+                                                    <div id="barchart5">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 chart_wrap  chart-box-last margin-right-1">
+                                                    <div id="barchart6">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END OF DATA AREA -->
+                    <a class="btn float-right next-button margin-bottom-20px" href="export.html">Next</a>
+                    <a class="btn float-right next-button back-button margin-bottom-20px" href="company.html">Back</a>
+                    
+                </div>
+            </div>
+    </div>
+    <div id="responsive" class="modal fade text-color-blue" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-add-column">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title text-color-white">Show and hide columns</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="scroller" style="height:200px" data-always-visible="1" data-rail-visible1="1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-checkbox">
+                                    <input checked="" class="md-check" id="checkbox2" type="checkbox">
+                                        <label for="checkbox2" class=" margin-top-5">
+                                            <span>
+                                            </span>
+                                            <span class="check">
+                                            </span>
+                                            <span class="box">
+                                            </span>
+                                            Description
+                                        </label>
+                                        
+                                    </input>
+                                </div>
+                                <div class="md-checkbox">
+                                    <input checked="" class="md-check" id="checkbox3" type="checkbox">
+                                        <label for="checkbox3" class=" margin-top-5">
+                                            <span>
+                                            </span>
+                                            <span class="check">
+                                            </span>
+                                            <span class="box">
+                                            </span>
+                                            Year Founded
+                                        </label>
+                                        
+                                    </input>
+                                </div>
+                                <div class="md-checkbox">
+                                    <input checked="" class="md-check" id="checkbox4" type="checkbox">
+                                        <label for="checkbox4" class=" margin-top-5">
+                                            <span>
+                                            </span>
+                                            <span class="check">
+                                            </span>
+                                            <span class="box">
+                                            </span>
+                                            Revenue
+                                        </label>
+                                        
+                                    </input>
+                                </div>
+                                <div class="md-checkbox">
+                                    <input checked="" class="md-check" id="checkbox5" type="checkbox">
+                                        <label for="checkbox5" class=" margin-top-5">
+                                            <span>
+                                            </span>
+                                            <span class="check">
+                                            </span>
+                                            <span class="box">
+                                            </span>
+                                            Profits
+                                        </label>
+                                        
+                                    </input>
+                                </div>
+                                <div class="md-checkbox">
+                                    <input checked="" class="md-check" id="checkbox6" type="checkbox">
+                                        <label for="checkbox6" class=" margin-top-5">
+                                            <span>
+                                            </span>
+                                            <span class="check">
+                                            </span>
+                                            <span class="box">
+                                            </span>
+                                            Employees Counts
+                                        </label>
+                                        
+                                    </input>
+                                </div>
+                                <div class="md-checkbox">
+                                    <input checked="" class="md-check" id="checkbox7" type="checkbox">
+                                        <label for="checkbox7" class=" margin-top-5">
+                                            <span>
+                                            </span>
+                                            <span class="check">
+                                            </span>
+                                            <span class="box">
+                                            </span>
+                                            City
+                                        </label>
+                                        
+                                    </input>
+                                </div>
+                                <div class="md-checkbox">
+                                    <input checked="" class="md-check" id="checkbox8" type="checkbox">
+                                        <label for="checkbox8" class=" margin-top-5">
+                                            <span>
+                                            </span>
+                                            <span class="check">
+                                            </span>
+                                            <span class="box">
+                                            </span>
+                                            Country
+                                        </label>
+                                        
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn default">Close</button>
+                    <button type="button" class="btn green">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<!-- DATATABLE BEGIN -->
+<script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+
+<!-- DATATABLE END -->
+<!-- TAGS BEGIN -->
+<script src="assets/global/plugins/jquery-tags-input/jquery.tagsinput.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+<script src="assets/global/plugins/typeahead/handlebars.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/typeahead/typeahead.bundle.min.js" type="text/javascript"></script>
+<!-- END OF TAGS BEGIN-->
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
+<script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
+<script src="assets/admin/pages/scripts/table-managed.js"></script>
+<script>
+    jQuery(document).ready(function() {       
+        Metronic.init(); // init metronic core components
+        Layout.init(); // init current layout
+        Demo.init(); // init demo features 
+        TableManaged.init();
+    });
+</script>
+        <!-- Chart -->
+        <script src="https://www.gstatic.com/charts/loader.js" type="text/javascript">
+        </script>
+        <script src="libs/chart_people.js" type="text/javascript">
+        </script>
+    </body>
+</html>

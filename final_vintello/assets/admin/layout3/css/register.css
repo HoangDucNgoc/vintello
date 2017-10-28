@@ -1,0 +1,37 @@
+.dashboard-title-box-register {
+    /* width: 66%; */
+    padding: 10px;
+    color: #002E5B;
+    font-weight: bold;
+    margin-top: 15px;
+    /* border-bottom: 1px solid #FDE428!important; */
+    padding-left: 11%;
+    text-align: left;
+}
+
+.btn-register {
+    float: right;
+}
+
+.input-register {
+    padding-top: 15px;
+}
+
+.label-name-control {
+    text-align: right;
+}
+
+.input-text-register {
+    border: 1px solid #FDE428;
+    border-radius: 0px;
+}
+
+.box-select-register {
+    margin-bottom: 30px;
+}
+
+.description-label-register {
+    margin-bottom: -21px;
+}
+
+
